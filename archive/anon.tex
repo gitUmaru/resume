@@ -1,0 +1,276 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\newcommand\ruleafter[1]{#1~{\color{black!60}\hrulefill}} % a trick to put the line with <before> parameter in \titleformat
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bbold
+}{}{0em}{\ruleafter}[\vspace{-0.2cm}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-0.5cm}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\definecolor{primay}{RGB}{46, 116, 181}
+\newcommand\bbold[1]{\textcolor{primay}{\textbf{#1}}}
+\newcommand\bunderline[1]{\textcolor{primay}{\underline{#1}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% ----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   {\href{https://www.linkedin.com/in/muhammad-umar-ali/}{\Large Umar Ali}} & \href{mailto:umaruali@student.ubc.ca}{umaruali@student.ubc.ca}\\
+%   \href{https://umarali.ca/}{https://umarali.ca/} & +1-778-779-2078 \\
+% \end{tabular*}
+
+\begin{center}
+    \bbold{\LARGE \scshape John Doe} \\ \vspace{1pt}
+    \href{mailto:johndoe@ubc.ca}{\bunderline{johndoe@ubc.ca}} $|$ \small +1 (012) - 345 - 6789 $|$ 
+    \href{https://www.linkedin.com/in/john-doe/}{\bunderline{linkedin.com/in/john-doe}} $|$
+    \href{https://johndoe.ca/}{\bunderline{johndoe.ca}}
+\end{center}
+
+\vspace{-0.75cm}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+
+% \vspace{-15pt}
+% \begin{multicols}{2}
+%     % \resumeItemListStart
+%     {Software}\vspace{-8pt}\begin{itemize}
+%     \setlength\itemsep{-2pt}
+%         \item\small{Exceptionally proficient with {Python}, Java, {C\#}, R, MATLAB, {C/C++}, Javascript, {git}, and \LaTeX}
+%         \item\small{Highly experienced with {TensorFlow}, scipy/scikit-learn, {pandas}, numpy, {matplotlib}, and seaborn}
+%         \item\small{Adept at {constructing unit tests} for software validation using standard testing libraries}
+%         \end{itemize}\vspace{-5pt}
+%     {Communication}\vspace{-8pt}\begin{itemize}
+%     \setlength\itemsep{-2pt}
+%         \item\small{Can accomplish tasks and {remain proactive} with minimal instruction or guidance}
+%         \item\small{Comfortable working in a team or independently to {solve unforeseen problems}}
+%         \item\small{Excellent with {scientific communication} and creating {technical documentation}}
+%     \end{itemize}\vspace{-5pt}
+%     % \resumeItemListEnd
+% \end{multicols}
+
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C\#, C/C++, MATLAB, R, JavaScript, Dart, Bash, HTML/CSS, and \LaTeX} \\
+     \textbf{Frameworks \& Tools}{: Git, Docker, Jira, Figma, Flutter, JUnit, Android Studio, and Advanced Research Computing} \\
+     \textbf{Libraries}{: TensorFlow, Keras, Pytorch, OpenCV, Pandas, NumPy, Scipy/Scikit-learn, Matplotlib, Seaborne, ggplot} % edgeR, DESeq, Bioconductor
+    }}
+ \end{itemize}
+\vspace{-0.75cm}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelor of Applied Science in Electrical Engineering, Biomedical Specialization}{Sep 2019 -- Apr 2024}
+        \resumeItemListStart
+        \resumeItem{\textbf{Awards}: Entrepreneurship Award, Research Award, Dean's Honour List}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {IoT Startup Company}{Vancouver, BC}
+      {Software Developer}{May 2022 -- \textit{Present}}
+      \resumeItemListStart
+        \resumeItem{Will be working directly under CTO to review code design, test production software, and implement new features.}
+        \resumeItem{Improved accuracy of proprietary machine learning algorithm from \textbf{87\% to 92\%} within first week.}
+
+    \resumeItemListEnd
+  
+    
+    \resumeSubheading
+      {Cancer Research Centre}{Vancouver, BC}
+      {Deep Learning Research Assistant}{May 2021 -- Aug 2021}
+      \resumeItemListStart
+        \resumeItem{Built several deep learning architectures to generate high quality clinical images using MATLAB and Python.}
+        \resumeItem{{Reduced training data} by leveraging adaptive augmentation in TensorFlow/ Pytorch, cutting need for total training pool from \textbf{10,000 to 1,000 images} while maintaining overall performance.}
+        \resumeItem{Accepted to present at several conferences (Harvard Research Conference 2022, Cancer Summit 2021, Faculty of Medicine Research Showcase 2022) receiving positive feedback.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {COURSE Teaching Assistant}{June 2021 -- Aug 2021}
+      \resumeItemListStart
+        \resumeItem{Curated curriculum for an {open-source programming bootcamp} for transition between first year and {upper-level software engineering courses} which enrolled  \textbf{100+ students}.}
+        % \resumeItem{Monitored and assessed each student's progress through project based learning and holding {weekly office hours} which resulted in an 88\% class average.}
+        \resumeItem{Monitored, assessed, and improved student understanding through project based learning, resulting in \textbf{88\% class average}.}
+        \resumeItem{{Collaborated} with faculty instructors to create lessons, projects, and exercises for {teaching} principles of software engineering.}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+    % \resumeSubSubheading
+    % {Software Engineer I}{Oct 2014 - Sep 2016}
+    % \resumeItemListStart
+    %     \resumeItem{Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+    % \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+% -------------------------------------------
+
+
+    \resumeSubheading
+      {Doe Laboratory}{Vancouver, BC}
+      {Software Research Assistant}{May 2020 -- July 2020}
+      \resumeItemListStart
+        \resumeItem{Implemented and deployed machine learning model on Android device using ONNX and TFLite with accuracy of \textbf{90\%}}
+        % \resumeItem{Developed {android application}, using Flutter, which {deployed machine learning model} to make real-time inferences of ovarian cancer histology slides}
+        \resumeItem{Quickly adapted to team's {Agile} development environment to finish \textbf{16\%} of total sprints within project over the first month.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Extracurricular}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {UBC Design Team}{Vancouver, BC}
+      {Electrical Lead}{Sep 2019 -- Present}
+      \resumeItemListStart
+        \resumeItem{Managed a team of 12 engineering students to design something impressive to compete in really big competition as premiere Canadian and undergraduate team - receiving over \textbf{\$3000} in merit based funding.}
+        \resumeItem{Assisted team members in performing various tasks such as circuit design, signal processing, and debugging.}
+        % \resumeItem {Optimized electromyogram design by implementing right-leg-driver for increased signal fidelity, lowering root-mean-square value considerably - from 0.0382 V to 0.0288 V. }
+        % \resumeItem{Spearheading pilot project of brain computer interface (BCI) by designing {embedded systems} Altium CAD; simulating PCB circuits with various {SPICE tools}.}
+    \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {UBC iGEM}{Vancouver, BC}
+    %   {Dry Lab Member}{Dec 2020 -- Present}
+    %   \resumeItemListStart
+    %     \resumeItem{}
+    %     % \resumeItem{Performed and consolidated bioinformatic analysis on single cell RNA sequence data in order to find cell type}
+    % \resumeItemListEnd
+    
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{YOLOCell App} $|$ \emph{Figma, TensorFlow, Python, Javascript} $|$ \href{https://tinyurl.com/}{\underline{tinyurl.com/}}}{Jan  - Apr, 2022}
+    \resumeItemListStart
+        \resumeItem{Designed, prototyped, and created a healthcare app for telemedicine and red blood cell detection.}
+        \resumeItem{See \href{https://tinyurl.com/yolocellui}{\underline{tinyurl.com/}} for Figma wireframe and \href{https://tinyurl.com/yolocellml}{\underline{tinyurl.com/}} for TensorFlow dashboard.}
+    \resumeItemListEnd
+    
+\resumeProjectHeading
+{\textbf{Bioinformatic Analysis} $|$ \emph{R, DESeq2, ggplot, edgeR, survminer} $|$ \href{https://youtu.be/}{\underline{youtu.be/}}}{Sept  - Dec, 2021}
+    \resumeItemListStart
+        \resumeItem{Conducted a differential expression analysis on sequence data for lung squamous cell carcinoma using R.}
+        \resumeItem{Found several statistically significant gene targets, based on mortality, for therapeutic development.}
+    \resumeItemListEnd   
+    
+\resumeProjectHeading
+{\textbf{Medical Image Generator} $|$ \emph{Python, NoSQL, GCP, Firebase, Node.js} $|$ \href{https://devpost.com/software/}{\underline{devpost.com/software/}}}{Sep 4 - 6, 2020}
+    \resumeItemListStart
+        \resumeItem{Created a {web application} with Google Cloud Platform for hosting a database of generated medical images, winning {3rd place} and \$1000 prize out of 700+ participants from Big US Medical Hackathon.}
+    \resumeItemListEnd
+    
+    
+
+
+\resumeSubHeadingListEnd
+
+
+%
+%-------------------------------------------
+\end{document}

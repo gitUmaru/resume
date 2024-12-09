@@ -1,0 +1,101 @@
+%-------------------------
+% Resume in Latex
+% Author : Umar Ali
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+\usepackage{multicol}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\newcommand\ruleafter[1]{#1~{\color{black!60}\hrulefill}} % a trick to put the line with <before> parameter in \titleformat
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bbold
+}{}{0em}{\ruleafter}[\vspace{-0.2cm}]
+
+%-------------------------
+% Custom commands
+\include{custom-commands}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\input{src/heading}
+
+%-----------SKILLS-----------
+% \input{src/skills}
+
+%-----------EDUCATION-----------
+\input{src/education}
+
+%-----------EXPERIENCE-----------
+\input{src/experience}
+
+%-----------PUBLICATIONS-----------
+% \input{src/publications}
+
+%-----------EXTRACURRICULAR-----------
+\input{src/extracurricular}
+
+%-----------PROJECTS-----------
+\input{src/projects}
+
+%-----------VOLUNTEER-----------
+% \input{src/volunteer.tex}
+
+%-----------CERTS-----------
+% \input{src/certificates.tex}
+
+%-------------------------------------------
+
+\end{document}
