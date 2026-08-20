@@ -9,9 +9,9 @@
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
-\usepackage{titlesec}
+\usepackage[explicit]{titlesec}
 \usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+\usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -57,8 +57,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bbold
-}{}{0em}{\ruleafter}[\vspace{-0.2cm}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{\ruleafter{\bbold{#1}}}[\vspace{-0.2cm}]
 
 %-------------------------
 % Custom commands
